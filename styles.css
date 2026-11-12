@@ -1,3 +1,7 @@
+html {
+    overflow: hidden;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -15,15 +19,17 @@ body {
 
 .container {
     background-color: hsl(0, 0%, 100%);
-    width: 375px;
+    width: 85%;
+    max-width: 320px;
+    height: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 20px;
-    margin: 100px auto;
+    margin: calc(50vh - 250px) auto;
 }
 
-img {
+.qr-code {
     width: 90%;
     border-radius: 15px 15px 15px 15px;
     margin-top: 20px;
@@ -33,11 +39,24 @@ img {
     font-size: 20px;
     font-weight: 700;
     color: hsl(218, 44%, 22%);
-    padding: 30px 0px 0px;
+   
+}
+
+main {
+    padding: 30px 20px 30px;
 }
 
 .instructions {
     font-weight: 400;
     color: hsl(216, 15%, 48%);
-    padding:10px 0px 30px;
 }
+
+.attribution {
+    font-size: 0.6875rem;
+    text-align: center; 
+}
+    
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
